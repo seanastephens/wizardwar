@@ -1,28 +1,10 @@
-This is the README.
+Final Project for CSc 335, University of Arizona, Spring 14
 
-Authors:
+This work represents an extension by Sean. The initial commit represents the state of the project at the end of the semester.
+
+Original Authors:
 
 Austin Paine
 Nick Callahan
 Nick DeJaco
 Sean Stephens
-
-To make git remember your password for a while (linux, might work on windows):
-
-    git config --global credential.helper "cache --timeout=<numberOfSeconds>"
-
-/*
- * Below may not apply to you all because I was the one that set up the repo.
- */
-
-If you do
-
-    git branch --set-upstream master origin/master
-
-Then you can just do
-
-    git pull    // or push!
-
-instead of 
-
-    git pull origin master
