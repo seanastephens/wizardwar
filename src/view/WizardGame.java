@@ -65,7 +65,7 @@ public class WizardGame extends JFrame {
 	private ObjectInputStream input = null;
 	private WizardWar game = null;
 	private int port;
-	public static String host = "ec2-54-187-221-22.us-west-2.compute.amazonaws.com";
+	public static String host = "localhost";
 
 	private MainPanel main;
 	private MenuPanel menu;
