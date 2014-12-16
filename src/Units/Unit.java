@@ -23,9 +23,6 @@ import Items.Item;
 
 public abstract class Unit implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 6140413768760499277L;
 
 	private static String BASE_PATH = "images/UnitImages/";
@@ -61,15 +58,12 @@ public abstract class Unit implements Serializable {
 	private int UID;
 	private static int nextUID = 0;
 
-	// Sprite Sheet
-
 	public Unit() {
 		items = new ArrayList<Item>();
 		UID = nextUID++;
 		hasMoved = false;
 		hasAttacked = false;
 		adjust = new Point();
-
 	}
 
 	public void damageDone(int damage) {
@@ -98,7 +92,6 @@ public abstract class Unit implements Serializable {
 		}
 
 		return true;
-		// rock beats scissors beats paper beats rock
 	}
 
 	public void move(int terrainCost) {
@@ -108,11 +101,6 @@ public abstract class Unit implements Serializable {
 
 	public void pickedUpItem(Item item) {
 		items.add(item);
-	}
-
-	// ???? XXX
-	public void blockAttack() {
-		defense--;
 	}
 
 	public void setTeam(String team) {
@@ -418,21 +406,6 @@ public abstract class Unit implements Serializable {
 		}
 	}
 
-	public int getInitialDefense() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public int getInitialCombat() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public int getInitialMana() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	public boolean hasMoved() {
 		return hasMoved;
 	}
@@ -467,6 +440,7 @@ public abstract class Unit implements Serializable {
 	}
 
 	protected class AnimationData implements Serializable {
+		private static final long serialVersionUID = 3106226610172010407L;
 		public final int numberOfImages;
 		public final int x;
 		public final int y;
