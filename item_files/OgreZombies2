@@ -1,0 +1,9 @@
+Brick,1,12
+Brick,5,6
+EnergyPotion,9,11
+AttackPotion,9,12
+HealthPotion,10,11
+DefensePotion,11,10
+HealthPotion,13,3
+DefensePotion,13,4
+EnergyPotion,13,5

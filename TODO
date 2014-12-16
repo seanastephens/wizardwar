@@ -1,0 +1,30 @@
+CALLIE
+    - Map path finding
+
+NICK
+    - Menu Panel
+
+AUSTIN
+    - a simple AI:
+
+    public interface AIStrategy {
+
+        public List<Message> getQueueOfActions(TileMap map, List<Unit> units);
+
+    }
+
+Sean 
+    - Get server handling messages.
+
+Team meeting:
+
+    - UNIT PARSER
+    - UI
+    - DECENT IMAGES!!!
+
+
+
+
+In the future...
+
+Map Editor

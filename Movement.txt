@@ -1,0 +1,9 @@
+Movement in Wizard Wars is done based on whether it is your turn or not. 
+If it is your turn, move a unit by clicking on the unit to select it and then clicking on a tile 
+on the map that is not occupied by another unit. If that tile is within your allowable move 
+range, an orange arrow will display the potential move. If you are unsatisfied with the move simply select
+that unit again and click on a different unoccupied tile. Attack moves are done the same way: simply select
+a unit and click on an tile occupied by an enemy unit. If that tile is within your allowable attack range,
+a red line should display the potential attack. If you are unsatisfied with the move simply select
+that unit again and click on a different tile occupied by an enemy. Click on the green end turn button to cause
+these movements to occur and to end your turn. 

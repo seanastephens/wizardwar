@@ -1,0 +1,5 @@
+Trap,8,13
+DefensePotion,10,5
+AttackPotion,10,10
+EnergyPotion,11,6
+ManaPotion,12,12

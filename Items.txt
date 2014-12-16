@@ -1,0 +1,8 @@
+In Wizard Wars, your units can pick up 6 different items, each of which 
+increases a different attribute of that unit. The items are displayed in 
+the status pop up that is displayed when you click on each unit on the map. 
+The different items include the attack potion, defense potion, energy potion, 
+health potion, mana potion, traps, and the flag in the capture the flag game mode.
+You can use an item by right clicking when a unit is selected. The potions will increase
+the units attributes while the trap causes that unit to not be able to move or attack for 
+next turn. 

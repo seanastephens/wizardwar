@@ -1,0 +1,7 @@
+# How to write a item_file:
+
+# Each line should contain an Item type followed by the 
+# row and column number of its initial location. For example:
+
+Trap,0,1
+EnergyPotion,1,2

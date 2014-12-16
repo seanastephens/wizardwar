@@ -1,0 +1,11 @@
+Wizard Wars is a turn-based tactical role playing game. 
+The goal of the game depends on the game type. In death match, the 
+objective is to kill all of the units of the opposing player. This can be
+done by attacking the other team's players units during your turn. 
+In capture the flag, the goal of the game is to capture the flag and bring it to the
+home base. You may capture the flag by having a unit move to the square that the
+flag contains and the flag will then be automatically picked up as an item. You can
+see that a unit has the flag by clicking on the unit and viewing the icon in the unit's
+status bar. If the unit carrying the flag is killed, the flag spawns at the position
+where the unit died. In Zombies, the computer spawns more tanks after each one of your turn. 
+Survive 40 turns to win this game type! 

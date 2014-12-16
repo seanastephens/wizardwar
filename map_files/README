@@ -1,0 +1,20 @@
+# How to write a map_file:
+
+# The first line should be:
+
+NUMBER_OF_ROWS=X
+
+# Where X is the number of rows (in other words the height of 
+# the map).The second line should be:
+
+NUMBER_OF_COLS=Y
+
+# Where Y is the number of coluns (in other words the width of 
+# the map). After the first two lines, put a comma-separated
+# list of tile types. For example, if NUMBER_OF_ROWS=4 and 
+# NUMBER_OF_COLS=3, the following might follow:
+
+Wall,Wall,Wall
+Grassland,Grassland,Wall
+Hill,Hill,Hill,
+Grassland,Base,Base

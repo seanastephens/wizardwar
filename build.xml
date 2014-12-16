@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="WizardWar">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../bin/eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+    </path>
+    <path id="WizardWar.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="jl1.0.1.jar"/>
+        <pathelement location="mp3spi1.9.4.jar"/>
+        <pathelement location="tritonus_share.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.ucls"/>
+                <exclude name="**/*.useq"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="WizardWar.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="WizardWarTest.testGetters">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="WizardWarTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="TileMapTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.TileMapTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="WizardWarTest.testMoveUnit">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="WizardGame">
+        <java classname="view.WizardGame" failonerror="true" fork="yes">
+            <jvmarg line="-ea"/>
+            <classpath refid="WizardWar.classpath"/>
+        </java>
+    </target>
+    <target name="WizardWarTest.testCantAddTooManyPlayers">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="ImageLoaderTest.test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.ImageLoaderTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="WizardWarTest.testPlayerUnitLists">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="ImageLoaderTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.ImageLoaderTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="WizardWarTest.testMoveUnitNotifies">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="WizardServer">
+        <java classname="server.WizardServer" failonerror="true" fork="yes">
+            <classpath refid="WizardWar.classpath"/>
+        </java>
+    </target>
+    <target name="TileMapTest.testFindNeightbors">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.TileMapTest" todir="${junit.output.dir}"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="tests (5)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="tests.ImageLoaderTest" todir="${junit.output.dir}"/>
+            <test name="tests.PathFinderTest" todir="${junit.output.dir}"/>
+            <test name="tests.TileMapTest" todir="${junit.output.dir}"/>
+            <test name="tests.WizardWarTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="WizardWar.classpath"/>
+        </junit>
+    </target>
+    <target name="ThumbNailGenerator">
+        <java classname="tools.ThumbNailGenerator" failonerror="true" fork="yes">
+            <classpath refid="WizardWar.classpath"/>
+        </java>
+    </target>
+    <target name="MapEditor">
+        <java classname="mapeditor.MapEditor" failonerror="true" fork="yes">
+            <classpath refid="WizardWar.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

@@ -1,0 +1,7 @@
+In Wizard Wars, you can form an army made up of up to 6 different
+types of units: wizards, scouts, archers, swordsman, artillery, and ogres. 
+Each unit has a different range of movement and attributes
+including attack strength and defense strength. When a unit is selected and it 
+is your turn, you will be able to see the tiles that the unit can move to as well 
+as its attack range. Each unit has its own image and animations. Some units may be 
+better for different game modes as well as different game situations. 
